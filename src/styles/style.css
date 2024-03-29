@@ -93,6 +93,7 @@ input[type="radio"] {
   background: rgb(168, 233, 255);
   border-radius: 1rem;
   cursor: pointer;
+  color: black;
 }
 
 .btn:hover {
