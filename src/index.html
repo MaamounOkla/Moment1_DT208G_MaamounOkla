@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skapa Kurslista - TypeScript</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="main.ts" type="module"></script>
 
@@ -17,16 +17,16 @@
     <form id="courseForm">
         <div class="rows">
             <label for="kurskod">Kurskod:</label>
-            <input id="courseCode" type="text" name="kurskod">
+            <input id="courseCode" type="text" required="true" name="kurskod">
         </div>
         <div class="rows">
             <label for="kursnamn">Kursnamn:</label>
-            <input id="courseName" type="text" name="kursnamn">
+            <input id="courseName" type="text"required="true" name="kursnamn">
         </div>
         <div class="rows">
             <label id="progression" for="progression">Progression:</label>
             <label for="a">A</label>
-            <input id="a" value="A" type="radio" name="progression">
+            <input id="a" value="A" type="radio" required="true"  name="progression">
             <label for="b" >B</label>
             <input id="b" value="B" type="radio" name="progression">
             <label for="c">C</label>
@@ -34,7 +34,7 @@
         </div>
         <div class="rows">
             <label for="syllabus">Länk till kursplan:</label>
-            <input id="syllabus" type="text" name="syllabus">
+            <input id="syllabus" type="text"required="true" name="syllabus">
         </div>
         <button type="submit" class="btn" id="addBtn">Lägg till</button>
     </form>
